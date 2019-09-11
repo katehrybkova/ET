@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+.categorie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.menuBlock {
+  background-color: #35393b;
+  min-height: 100vh;
+  color: white;
+  padding: 0 0 25px;
+  width: 100%;
+  position: absolute;
+  left: -100%;
+  transition: 1s;
+  top: 56px;
+}
+
+.menuBlock ul {
+  list-style: none;
+}
+.mainList:first-child {
+  border-top: 1px #464646 solid;
+}
+
+.menuBlock ul ul {
+  margin-left: 15px;
+}
+
+.menuBlock ul ul li {
+  border: none;
+}
+
+header {
+  background-color: rgb(4, 0, 255);
+  height: 60px;
+}
+
+main {
+  background-color: rgb(9, 255, 0);
+}
+
+.mainList li {
+  border-bottom: 1px #464646 solid;
+  padding: 5px 15px 0 50px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.mainList li:hover {
+  background-color: #464646;
+  color: #ff5c29;
+}
+
+.subList {
+  display: none;
+}
+
+.thirdList {
+  display: none;
+}
+
+.subList li:hover .thirdList {
+  display: block;
+}
+
+.subList li {
+  color: white;
+}
+
+.mainList a,
+.langBox a,
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.mainList a:hover,
+.langBox a:hover {
+  color: #ff5c29;
+}
+.menuBlock li {
+  cursor: pointer;
+}
+
+/* ------------------------- */
+
+#china:checked ~ .subList,
+#science:checked ~ .subList,
+#aroundWorld:checked ~ .subList,
+#culture:checked ~ .subList,
+#archive:checked ~ .subList,
+#world:checked ~ .subList,
+#russia:checked ~ .subList,
+#moscow:checked ~ .subList,
+#opinion:checked ~ .subList,
+#fashion:checked ~ .subList,
+#sport:checked ~ .subList,
+#video:checked ~ .subList,
+#health:checked ~ .subList,
+#aboutAll:checked ~ .subList {
+  display: block;
+}
+#lang:checked ~ .langFlex {
+  display: flex;
+  justify-content: space-around;
+}
+.langFlex {
+  padding: 20px 50px 0 0;
+  display: none;
+}
+.borderList {
+  border-right: 1px #464646 solid;
+}
+#idishka:checked ~ .menuBlock {
+  left: 0;
+}
+.inline {
+  display: inline-block;
+  width: 20px;
+  height: 25px;
+  background-image: url(../images/menu.svg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  top: 17px;
+  left: 25px;
+  transition: 1s;
+}
+
+#idishka:checked ~ .inline {
+  background-image: url(../images/close.svg);
+  background-size: cover;
+  background-position: center center;
+  background-size: 20px;
+  height: 20px;
+}
+
+#idishka,
+#inspiration,
+#china,
+#culture,
+#science,
+#aroundWorld,
+#archive,
+#world,
+#russia,
+#moscow,
+#opinion,
+#fashion,
+#sport,
+#video,
+#health,
+#lang,
+#aboutAll {
+  display: none;
+  width: 20%;
+}
+i {
+  padding-bottom: 3px;
+}
+#china:checked ~ .imgLabel,
+#inspiration:checked ~ .imgLabel,
+#culture:checked ~ .imgLabel,
+#science:checked ~ .imgLabel,
+#aroundWorld:checked ~ .imgLabel,
+#archive:checked ~ .imgLabel,
+#world:checked ~ .imgLabel,
+#russia:checked ~ .imgLabel,
+#moscow:checked ~ .imgLabel,
+#opinion:checked ~ .imgLabel,
+#fashion:checked ~ .imgLabel,
+#sport:checked ~ .imgLabel,
+#video:checked ~ .imgLabel,
+#health:checked ~ .imgLabel,
+#aboutAll:checked ~ .imgLabel {
+  transform: rotate(180deg);
+}
+
+.subList li li {
+  padding: 5px 0;
+}
+.link {
+  padding: 8px 0;
+}
+.secList li {
+  padding: 5px 0;
+}
+.archiveList li {
+  padding: 0;
+}
+
+.imgLabel {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+
+.labelBox {
+  position: relative;
+  display: inline-block;
+  width: 6%;
+  z-index: 999;
+}
+.categorieLabel {
+  cursor: pointer;
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.relLi {
+  /* padding-top: 15px; */
+  position: relative;
+}
+.mainList .categoryName {
+  display: inline-block;
+  width: 92%;
+}
+.thirdLabel {
+  right: 15px;
+}
+.relLi .categoryName {
+  padding-bottom: 10px;
+}
+header {
+  height: 56px;
+  background: linear-gradient(to right, #043369, #000f3a);
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.mainBlock {
+  width: 100%;
+}
+header p {
+  padding: 10px;
+  font-size: 31px;
+  padding-left: 100px;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  color: white;
+  background-color: #252a2c;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 25px;
+}
+nav ul li {
+  padding: 15px 15px;
+  font-size: 15px;
+}
+nav a:hover {
+  color: #ff5c29;
+}
+.networkIcons {
+  padding-top: 20px;
+  width: 150px;
+}
+.networkIcons i {
+  color: #d6d4d3;
+  padding: 0 7px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.search input {
+  background-color: #464646;
+  margin: auto;
+  font-size: 17px;
+  width: 100%;
+  height: 45px;
+  padding-left: 50px;
+  border: none
+}
+
+.search button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 27px;
+  cursor: pointer;
+  color:#D6D4D3; 
+}
+
+.search input:focus {
+    
+}
