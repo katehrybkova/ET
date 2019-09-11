@@ -250,10 +250,11 @@ header {
   width: 100%;
 }
 header p {
-  padding: 10px;
-  font-size: 31px;
-  padding-left: 100px;
-  margin: auto;
+  /* padding: 15px; */
+  font-size: 25px;
+  padding-left: 50px;
+  padding-top: 15px;
+  margin: 0 auto;
 }
 nav ul {
   display: flex;
@@ -272,11 +273,11 @@ nav a:hover {
 }
 .networkIcons {
   padding-top: 20px;
-  width: 150px;
+  width: 90px;
 }
 .networkIcons i {
   color: #d6d4d3;
-  padding: 0 7px;
+  padding: 0 3px;
 }
 
 .search {
