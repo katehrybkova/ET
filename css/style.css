@@ -12,7 +12,7 @@
 .flex {
   display: flex;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -54,7 +54,7 @@ main {
 
 .mainList li {
   border-bottom: 1px #464646 solid;
-  padding: 5px 15px 0 50px;
+  padding: 5px 15px 0 30px;
   cursor: pointer;
   justify-content: space-between;
 }
@@ -213,23 +213,21 @@ i {
 .labelBox {
   position: relative;
   display: inline-block;
-  width: 6%;
+  width: 10%;
   z-index: 999;
 }
 .categorieLabel {
   cursor: pointer;
-  width: 30px;
   display: flex;
   justify-content: space-between;
   height: 20px;
 }
 .relLi {
-  /* padding-top: 15px; */
   position: relative;
 }
 .mainList .categoryName {
   display: inline-block;
-  width: 92%;
+  width: 85%;
 }
 .thirdLabel {
   right: 15px;
@@ -245,16 +243,10 @@ header {
   text-align: center;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 .mainBlock {
   width: 100%;
-}
-header p {
-  /* padding: 15px; */
-  font-size: 25px;
-  padding-left: 50px;
-  padding-top: 15px;
-  margin: 0 auto;
 }
 nav ul {
   display: flex;
@@ -265,7 +257,7 @@ nav ul {
   margin-bottom: 25px;
 }
 nav ul li {
-  padding: 15px 15px;
+  padding: 15px 10px;
   font-size: 15px;
 }
 nav a:hover {
@@ -283,7 +275,6 @@ nav a:hover {
 .search {
   width: 100%;
   position: relative;
-  
 }
 
 .search input {
@@ -292,8 +283,8 @@ nav a:hover {
   font-size: 17px;
   width: 100%;
   height: 45px;
-  padding-left: 50px;
-  border: none
+  padding-left: 45px;
+  border: none;
 }
 
 .search button {
@@ -303,9 +294,24 @@ nav a:hover {
   top: 15px;
   right: 27px;
   cursor: pointer;
-  color:#D6D4D3; 
+  color: #d6d4d3;
 }
 
-.search input:focus {
-    
+
+.name {
+  font-size: 25px;
+  position: absolute;
+  z-index: 99;
+  color: #ffffff;
+  transform: translate(40%, 53%);
+opacity: 0;
+  transition: 1s;
+}
+
+#idishka:checked ~ .name {
+  opacity: 1;
+}
+.mainList{
+  width: 90%;
+  margin: 0 auto;
 }
