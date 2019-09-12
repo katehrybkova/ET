@@ -277,6 +277,7 @@ header {
   transition: 2s;
   left: 20%;
   top: 7.5%;
+  font-family: 'Times New Roman', Times, serif
 }
 
 #idishka:checked ~ .name {
@@ -305,6 +306,8 @@ header {
   margin: auto;
   font-size: 35px;
   font-stretch: ultra-condensed;
+  font-family: 'Times New Roman', Times, serif
+
 }
 .et p {
   padding: 30px 5px 0;
