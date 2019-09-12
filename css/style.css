@@ -26,6 +26,7 @@
   left: -100%;
   transition: 1s;
   top: 56px;
+  z-index: 90;
 }
 
 .menuBlock ul {
@@ -41,15 +42,6 @@
 
 .menuBlock ul ul li {
   border: none;
-}
-
-header {
-  background-color: rgb(4, 0, 255);
-  height: 60px;
-}
-
-main {
-  background-color: rgb(9, 255, 0);
 }
 
 .mainList li {
@@ -77,13 +69,6 @@ main {
 }
 
 .subList li {
-  color: white;
-}
-
-.mainList a,
-.langBox a,
-nav a {
-  text-decoration: none;
   color: white;
 }
 
@@ -137,7 +122,7 @@ nav a {
   cursor: pointer;
   position: absolute;
   z-index: 99;
-  top: 17px;
+  top: 19px;
   left: 25px;
   transition: 1s;
 }
@@ -248,21 +233,7 @@ header {
 .mainBlock {
   width: 100%;
 }
-nav ul {
-  display: flex;
-  color: white;
-  background-color: #252a2c;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 25px;
-}
-nav ul li {
-  padding: 15px 10px;
-  font-size: 15px;
-}
-nav a:hover {
-  color: #ff5c29;
-}
+
 .networkIcons {
   padding-top: 20px;
   width: 90px;
@@ -292,26 +263,111 @@ nav a:hover {
   border: none;
   position: absolute;
   top: 15px;
-  right: 27px;
+  right: 45px;
   cursor: pointer;
   color: #d6d4d3;
 }
-
 
 .name {
   font-size: 25px;
   position: absolute;
   z-index: 99;
   color: #ffffff;
-  transform: translate(40%, 53%);
-opacity: 0;
-  transition: 1s;
+  opacity: 0;
+  transition: 2s;
+  left: 20%;
+  top: 7.5%;
 }
 
 #idishka:checked ~ .name {
   opacity: 1;
 }
-.mainList{
+.mainList {
   width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 350px) {
+  .name {
+    left: 25%;
+  }
+}
+@media (min-width: 450px) {
+  .name {
+    left: 35%;
+  }
+}
+.main {
+  width: 100%;
+}
+.et {
+  height: 90px;
+  border-bottom: 1px solid #dad9df;
+  margin: auto;
+  font-size: 35px;
+  font-stretch: ultra-condensed;
+}
+.et p {
+  padding: 30px 5px 0;
+  margin: auto;
+  width: 238px;
+  position: relative;
+}
+
+.et p:before,
+.et p:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  top: 48px;
+  width: 20px;
+}
+.et p:before {
+  left: -28px;
+}
+.et p:after {
+  left: 245px;
+}
+.menuNav ul,
+.mainNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.menuNav ul {
+  background-color: #252a2c;
+}
+.mainNav ul {
+  padding: 7px 0;
+}
+.menuNav ul li {
+  padding: 15px 10px;
+  font-size: 15px;
+}
+.mainNav ul li {
+  padding: 5px 12px;
+}
+.menuNav a:hover,
+.mainNav a:hover {
+  color: #ff5c29;
+}
+.mainList a,
+.langBox a,
+.menuNav a,
+.mainNav a {
+  text-decoration: none;
+}
+.mainList a,
+.langBox a,
+.menuNav a {
+  color: white;
+}
+.mainNav a{
+  color: black;
+}
+.mainNav {
+  border-bottom: 3px solid black;
+  font-size: 13px;
+  font-weight: 500
 }
