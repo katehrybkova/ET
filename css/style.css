@@ -111,6 +111,7 @@
 }
 #idishka:checked ~ .menuBlock {
   left: 0;
+
 }
 .inline {
   display: inline-block;
@@ -124,7 +125,6 @@
   z-index: 99;
   top: 19px;
   left: 25px;
-  transition: 1s;
 }
 
 #idishka:checked ~ .inline {
@@ -198,7 +198,7 @@ i {
 .labelBox {
   position: relative;
   display: inline-block;
-  width: 10%;
+  width: 15%;
   z-index: 999;
 }
 .categorieLabel {
@@ -212,7 +212,7 @@ i {
 }
 .mainList .categoryName {
   display: inline-block;
-  width: 85%;
+  width: 80%;
 }
 .thirdLabel {
   right: 15px;
@@ -256,6 +256,7 @@ header {
   height: 45px;
   padding-left: 45px;
   border: none;
+  color: white;
 }
 
 .search button {
