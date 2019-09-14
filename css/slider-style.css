@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .slideshow-container {
     position: relative;
     margin: auto;
@@ -11,9 +10,6 @@
 .mySlides {
     display: none;
 }
-
-
-
 .prev,
 .next {
     cursor: pointer;
@@ -87,4 +83,23 @@
 .dot:hover {
   background-color: #f94702;
 }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from { left: 0; }
+    to { left: 300px; }
+  }
+  
+  @keyframes fade {
+    50% { left: 0; }
+    90% { left: 300px; }
+  }
+
+
 
