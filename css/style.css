@@ -374,3 +374,8 @@ header {
   margin-bottom: 25px;
 }
 
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}

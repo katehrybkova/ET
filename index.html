@@ -11,6 +11,7 @@
         rel="stylesheet"
         href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
       />
+      <link rel="stylesheet" href="./css/swiper.min.css" />
       <title>Document</title>
     </head>
 
@@ -419,61 +420,87 @@
               </ul>
             </nav>
 
-            <div class="slideshow-container">
-              <div class="gradCard"></div>
-              <div class="mySlides fade">
-                <img src="images/common.jpg" width="100%" alt="pic" />
-                <div class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, nemo?
+            <!-- <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="images/common.jpg" width="100%" alt="pic" /></div>
+                <div class="swiper-slide"><img src="images/dandelion1.jpg" width="100%" alt="pic" /></div>
+                <div class="swiper-slide"><img src="images/dandelion2.jpg" width="100%" alt="pic" /></div>
+                <div class="swiper-slide"><img src="images/flower.jpg" width="100%" alt="pic" /></div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div> -->
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/common.jpg" width="100%" alt="pic" />
+                  <div class="gradCard"></div>
+                  <p class="textCard">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/dandelion1.jpg" width="100%" alt="pic" />
+                  <div class="gradCard"></div>
+                  <p class="textCard">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/dandelion2.jpg" width="100%" alt="pic" />
+                  <div class="gradCard"></div>
+                  <p class="textCard">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/flower.jpg" width="100%" alt="pic" />
+                  <div class="gradCard"></div>
+                  <p class="textCard">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                  </p>
                 </div>
               </div>
 
-              <div class="mySlides fade">
-                <img src="images/dandelion1.jpg" width="100%" alt="pic" />
-                <div class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minus, veniam?
-                </div>
-              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="block-button-prev"></div>
+              <div class="block-button-next"></div>
 
-              <div class="mySlides fade">
-                <img src="images/dandelion2.jpg" width="100%" alt="pic" />
-                <div class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus, quaerat.
-                </div>
-              </div>
-
-              <div class="mySlides fade">
-                <img src="images/flower.jpg" width="100%" alt="pic" />
-                <div class="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Accusamus, alias.
-                </div>
-              </div>
-              <a class="prev" onclick="plusSlides(-1)"
-                ><img src="images/arrow-left.png" alt="arrow"
-              /></a>
-              <a class="next" onclick="plusSlides(1)"
-                ><img src="images/arrow-right.png" alt="arrow"
-              /></a>
-
-              <div class="dotContainer">
-                <span class="dot dot1" onclick="currentSlide(1)"></span>
-                <span class="dot dot2" onclick="currentSlide(2)"></span>
-                <span class="dot dot3" onclick="currentSlide(3)"></span>
-                <span class="dot dot4" onclick="currentSlide(4)"></span>
-              </div>
+              <div class="swiper-scrollbar"></div>
             </div>
           </main>
         </div>
       </div>
 
-
-
-
       <script src="js/index.js"></script>
+      <script src="js/swiper.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          }
+        });
+      </script>
     </body>
   </html>
 </body>
