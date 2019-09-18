@@ -1,506 +1,439 @@
 <body>
   <!DOCTYPE html>
   <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/slider-style.css" />
-      <link
-        rel="stylesheet"
-        href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"
-      />
-      <link rel="stylesheet" href="./css/swiper.min.css" />
-      <title>Document</title>
-    </head>
 
-    <body>
-      <div class="flex">
-        <input type="checkbox" id="idishka" />
-        <label for="idishka" class="inline"> </label>
-        <p class="name">EPOCH TIMES</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <title>Document</title>
+  </head>
 
-        <div class="menuBlock">
-          <nav class="menuNav">
+  <body>
+    <div class="flex">
+      <input type="checkbox" id="idishka" />
+      <label for="idishka" class="inline"> </label>
+      <p class="name">EPOCH TIMES</p>
+
+      <div class="menuBlock">
+        <nav class="menuNav">
+          <ul>
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">РЕКЛАМА</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Поиск..." />
+            <button type="submit">
+              <i class="fa fa-search  fa-lg" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="mainList">
+          <li>
+            <div class="categorie link">
+              <a href="#">ВДОХНОВЕНИЕ</a>
+            </div>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="china" />
+
+            <div class="categoryName">
+              <a href="#"> КИТАЙ</a>
+            </div>
+            <div class="labelBox">
+              <label for="china" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+            <ul class="subList secList">
+              <li><a href="#"> Политика Китая</a></li>
+              <li><a href="#">Экономика Китая</a></li>
+              <li><a href="#">Природные и техногенные катастрофы</a></li>
+              <li><a href="#">Общество Китая</a></li>
+              <li><a href="#">Гонконг</a></li>
+              <li><a href="#">Права человека</a></li>
+              <li><a href="#">Извлечение органов</a></li>
+              <li><a href="#">Традиционная культура</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="categorie link">
+              <a href="#">ЖИЗНЬ</a>
+            </div>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="culture" />
+
+            <div class="categoryName">
+              <a href="#"> КУЛЬТУРА И ИСКУССТВО</a>
+            </div>
+            <div class="labelBox">
+              <label for="culture" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости культуры</a></li>
+              <li><a href="#">Знаменитости</a></li>
+              <li><a href="#">Искусство</a></li>
+              <li><a href="#">Кино и музыка</a></li>
+              <li><a href="#"> Shen Yun – спецтема</a></li>
+              <li><a href="#">Литература</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="science" />
+            <div class="categoryName">
+              <a href="#"> НАУКА И ТЕХНОЛОГИИ</a>
+            </div>
+            <div class="labelBox">
+              <label for="science" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости науки</a></li>
+              <li><a href="#">Окружающая среда</a></li>
+              <li><a href="#">За гранью науки</a></li>
+              <li><a href="#">Космос</a></li>
+              <li><a href="#">Технологии и открытия</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="aroundWorld" />
+
+            <div class="categoryName">
+              <a href="#"> ВОКРУГ СВЕТА</a>
+            </div>
+            <div class="labelBox">
+              <label for="aroundWorld" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости туризма</a></li>
+              <li><a href="#">Туризм и отдых</a></li>
+              <li><a href="#">Достопримечательности</a></li>
+              <li><a href="#">Советы туристам</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="archive" />
+
+            <div class="categoryName">
+              <a href="#"> АРХИВ</a>
+            </div>
+            <div class="labelBox">
+              <label for="archive" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList archiveList">
+              <li class="relLi">
+                <input type="checkbox" id="world" />
+
+                <div class="categoryName">
+                  <a href="#"> МИР</a>
+                </div>
+                <div class="labelBox">
+                  <label for="world" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel  thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#"> Европа</a></li>
+                  <li><a href="#"> Украина</a></li>
+                  <li><a href="#"> Ближний восток</a></li>
+                  <li><a href="#"> Азия</a></li>
+                  <li><a href="#"> Африка</a></li>
+                  <li><a href="#"> Северная Америка</a></li>
+                  <li><a href="#"> Южная Америка</a></li>
+                  <li><a href="#"> Австралия и Океания</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="russia" />
+                <div class="categoryName">
+                  <a href="#"> РОССИЯ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="russia" class="categorieLabel "></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+
+                <ul class="subList">
+                  <li><a href="#"> Политика России</a></li>
+                  <li><a href="#"> Экономика России</a></li>
+                  <li><a href="#"> Происшествия в России</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="moscow" />
+
+                <div class="categoryName">
+                  <a href="#"> МОСКВА</a>
+                </div>
+                <div class="labelBox">
+                  <label for="moscow" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+
+                <ul class="subList">
+                  <li>Отдых в Москве</li>
+                  <li>Происшествия в Москве</li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="opinion" />
+
+                <div class="categoryName">
+                  <a href="#"> МНЕНИЕ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="opinion" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Интервью</a></li>
+                  <li><a href="#">Точка зрения</a></li>
+                  <li><a href="#">Взгляд на Китай</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="fashion" />
+                <div class="categoryName">
+                  <a href="#"> МОДА</a>
+                </div>
+                <div class="labelBox">
+                  <label for="fashion" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Новости моды</a></li>
+                  <li><a href="#">Тренды</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="sport" />
+
+                <div class="categoryName">
+                  <a href="#"> СПОРТ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="sport" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Новости спорта</a></li>
+                  <li><a href="#">Новости футбола</a></li>
+                  <li><a href="#">Новости хоккея</a></li>
+                  <li><a href="#">Фигурное катание</a></li>
+                  <li><a href="#">Автоспорт</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="categorie link">
+                  <a href="#"> ИСТОРИЯ КОММУНИЗМА</a>
+                </div>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="video" />
+                <div class="categoryName">
+                  <a href="#"> ВИДЕО</a>
+                </div>
+                <div class="labelBox">
+                  <label for="video" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">О разном</a></li>
+                  <li><a href="#">Забавные животные</a></li>
+                  <li><a href="#">Развлечения</a></li>
+                  <li><a href="#">Фотогалерея</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="health" />
+                <div class="categoryName">
+                  <a href="#"> ЗДОРОВЬЕ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="health" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#"> Образ жизни</a></li>
+                  <li><a href="#"> Правильное питание</a></li>
+                  <li><a href="#"> Фитнесс</a></li>
+                  <li><a href="#"> Новости медицины</a></li>
+                  <li><a href="#"> Китайская медицина</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="aboutAll" />
+                <div class="categoryName">
+                  <a href="#"> ОБО ВСЁМ ПОНЕМНОГУ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="aboutAll" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Семья</a></li>
+                  <li><a href="#">Дом</a></li>
+                  <li><a href="#">Кулинария</a></li>
+                  <li><a href="#">Авто</a></li>
+                  <li><a href="#">Интересные факты</a></li>
+                  <li><a href="#">Товары и услуг</a></li>
+                  <li class="link">
+                    <a href="#">Образование и карьера</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mainBlock">
+        <header>
+          <div class="networkIcons">
+            <a href="#"><i class="fa fa-facebook  fa-lg" aria-hidden="true"></i></a>
+            <a href="#">
+              <i class="fa fa-vk  fa-lg" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki   fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </header>
+        <main>
+          <div class="et">
+            <p>EPOCH TIMES</p>
+          </div>
+          <nav class="mainNav">
             <ul>
+              <li><a href="#">ГЛАВНАЯ</a></li>
               <li><a href="#">О НАС</a></li>
               <li><a href="#">КОНТАКТЫ</a></li>
               <li><a href="#">РЕКЛАМА</a></li>
+              <li><a href="#">РУБРИКИ</a></li>
             </ul>
           </nav>
-          <div class="search">
-            <form>
-              <input type="text" placeholder="Поиск..." />
-              <button type="submit">
-                <i class="fa fa-search  fa-lg" aria-hidden="true"></i>
-              </button>
-            </form>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/common.jpg" width="100%" alt="pic" />
+                <div class="gradCard"></div>
+                <p class="textCard">
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/dandelion1.jpg" width="100%" alt="pic" />
+                <div class="gradCard"></div>
+                <p class="textCard">
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/dandelion2.jpg" width="100%" alt="pic" />
+                <div class="gradCard"></div>
+                <p class="textCard">
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                </p>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/flower.jpg" width="100%" alt="pic" />
+                <div class="gradCard"></div>
+                <p class="textCard">
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus, eos.
+                </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><img src="./images/double-angle-pointing-to-right.svg" width="25px"
+                alt="arrow"></div>
+            <div class="swiper-button-next"><img src="./images/double-angle-pointing-to-right.svg" width="25px"
+                alt="arrow"></div>
+            <div class="block-button-prev"></div>
+            <div class="block-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
           </div>
-          <ul class="mainList">
-            <li>
-              <div class="categorie link">
-                <a href="#">ВДОХНОВЕНИЕ</a>
-              </div>
-            </li>
-
-            <li class="relLi">
-              <input type="checkbox" id="china" />
-
-              <div class="categoryName">
-                <a href="#"> КИТАЙ</a>
-              </div>
-              <div class="labelBox">
-                <label for="china" class="categorieLabel"></label>
-              </div>
-              <div class="imgLabel">
-                <img
-                  src="./images/drop-down-arrow.svg"
-                  width="10px"
-                  alt="arrow"
-                />
-              </div>
-              <ul class="subList secList">
-                <li><a href="#"> Политика Китая</a></li>
-                <li><a href="#">Экономика Китая</a></li>
-                <li><a href="#">Природные и техногенные катастрофы</a></li>
-                <li><a href="#">Общество Китая</a></li>
-                <li><a href="#">Гонконг</a></li>
-                <li><a href="#">Права человека</a></li>
-                <li><a href="#">Извлечение органов</a></li>
-                <li><a href="#">Традиционная культура</a></li>
-              </ul>
-            </li>
-            <li>
-              <div class="categorie link">
-                <a href="#">ЖИЗНЬ</a>
-              </div>
-            </li>
-
-            <li class="relLi">
-              <input type="checkbox" id="culture" />
-
-              <div class="categoryName">
-                <a href="#"> КУЛЬТУРА И ИСКУССТВО</a>
-              </div>
-              <div class="labelBox">
-                <label for="culture" class="categorieLabel"></label>
-              </div>
-              <div class="imgLabel">
-                <img
-                  src="./images/drop-down-arrow.svg"
-                  width="10px"
-                  alt="arrow"
-                />
-              </div>
-
-              <ul class="subList secList">
-                <li><a href="#">Новости культуры</a></li>
-                <li><a href="#">Знаменитости</a></li>
-                <li><a href="#">Искусство</a></li>
-                <li><a href="#">Кино и музыка</a></li>
-                <li><a href="#"> Shen Yun – спецтема</a></li>
-                <li><a href="#">Литература</a></li>
-              </ul>
-            </li>
-
-            <li class="relLi">
-              <input type="checkbox" id="science" />
-              <div class="categoryName">
-                <a href="#"> НАУКА И ТЕХНОЛОГИИ</a>
-              </div>
-              <div class="labelBox">
-                <label for="science" class="categorieLabel"></label>
-              </div>
-              <div class="imgLabel">
-                <img
-                  src="./images/drop-down-arrow.svg"
-                  width="10px"
-                  alt="arrow"
-                />
-              </div>
-
-              <ul class="subList secList">
-                <li><a href="#">Новости науки</a></li>
-                <li><a href="#">Окружающая среда</a></li>
-                <li><a href="#">За гранью науки</a></li>
-                <li><a href="#">Космос</a></li>
-                <li><a href="#">Технологии и открытия</a></li>
-              </ul>
-            </li>
-
-            <li class="relLi">
-              <input type="checkbox" id="aroundWorld" />
-
-              <div class="categoryName">
-                <a href="#"> ВОКРУГ СВЕТА</a>
-              </div>
-              <div class="labelBox">
-                <label for="aroundWorld" class="categorieLabel"></label>
-              </div>
-              <div class="imgLabel">
-                <img
-                  src="./images/drop-down-arrow.svg"
-                  width="10px"
-                  alt="arrow"
-                />
-              </div>
-
-              <ul class="subList secList">
-                <li><a href="#">Новости туризма</a></li>
-                <li><a href="#">Туризм и отдых</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Советы туристам</a></li>
-              </ul>
-            </li>
-
-            <li class="relLi">
-              <input type="checkbox" id="archive" />
-
-              <div class="categoryName">
-                <a href="#"> АРХИВ</a>
-              </div>
-              <div class="labelBox">
-                <label for="archive" class="categorieLabel"></label>
-              </div>
-              <div class="imgLabel">
-                <img
-                  src="./images/drop-down-arrow.svg"
-                  width="10px"
-                  alt="arrow"
-                />
-              </div>
-
-              <ul class="subList archiveList">
-                <li class="relLi">
-                  <input type="checkbox" id="world" />
-
-                  <div class="categoryName">
-                    <a href="#"> МИР</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="world" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel  thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#"> Европа</a></li>
-                    <li><a href="#"> Украина</a></li>
-                    <li><a href="#"> Ближний восток</a></li>
-                    <li><a href="#"> Азия</a></li>
-                    <li><a href="#"> Африка</a></li>
-                    <li><a href="#"> Северная Америка</a></li>
-                    <li><a href="#"> Южная Америка</a></li>
-                    <li><a href="#"> Австралия и Океания</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="russia" />
-                  <div class="categoryName">
-                    <a href="#"> РОССИЯ</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="russia" class="categorieLabel "></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-
-                  <ul class="subList">
-                    <li><a href="#"> Политика России</a></li>
-                    <li><a href="#"> Экономика России</a></li>
-                    <li><a href="#"> Происшествия в России</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="moscow" />
-
-                  <div class="categoryName">
-                    <a href="#"> МОСКВА</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="moscow" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-
-                  <ul class="subList">
-                    <li>Отдых в Москве</li>
-                    <li>Происшествия в Москве</li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="opinion" />
-
-                  <div class="categoryName">
-                    <a href="#"> МНЕНИЕ</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="opinion" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#">Интервью</a></li>
-                    <li><a href="#">Точка зрения</a></li>
-                    <li><a href="#">Взгляд на Китай</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="fashion" />
-                  <div class="categoryName">
-                    <a href="#"> МОДА</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="fashion" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#">Новости моды</a></li>
-                    <li><a href="#">Тренды</a></li>
-                    <li><a href="#">Аксессуары</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="sport" />
-
-                  <div class="categoryName">
-                    <a href="#"> СПОРТ</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="sport" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#">Новости спорта</a></li>
-                    <li><a href="#">Новости футбола</a></li>
-                    <li><a href="#">Новости хоккея</a></li>
-                    <li><a href="#">Фигурное катание</a></li>
-                    <li><a href="#">Автоспорт</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <div class="categorie link">
-                    <a href="#"> ИСТОРИЯ КОММУНИЗМА</a>
-                  </div>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="video" />
-                  <div class="categoryName">
-                    <a href="#"> ВИДЕО</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="video" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#">О разном</a></li>
-                    <li><a href="#">Забавные животные</a></li>
-                    <li><a href="#">Развлечения</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="health" />
-                  <div class="categoryName">
-                    <a href="#"> ЗДОРОВЬЕ</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="health" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#"> Образ жизни</a></li>
-                    <li><a href="#"> Правильное питание</a></li>
-                    <li><a href="#"> Фитнесс</a></li>
-                    <li><a href="#"> Новости медицины</a></li>
-                    <li><a href="#"> Китайская медицина</a></li>
-                  </ul>
-                </li>
-                <li class="relLi">
-                  <input type="checkbox" id="aboutAll" />
-                  <div class="categoryName">
-                    <a href="#"> ОБО ВСЁМ ПОНЕМНОГУ</a>
-                  </div>
-                  <div class="labelBox">
-                    <label for="aboutAll" class="categorieLabel"></label>
-                  </div>
-                  <div class="imgLabel thirdLabel">
-                    <img
-                      src="./images/drop-down-arrow.svg"
-                      width="10px"
-                      alt="arrow"
-                    />
-                  </div>
-                  <ul class="subList">
-                    <li><a href="#">Семья</a></li>
-                    <li><a href="#">Дом</a></li>
-                    <li><a href="#">Кулинария</a></li>
-                    <li><a href="#">Авто</a></li>
-                    <li><a href="#">Интересные факты</a></li>
-                    <li><a href="#">Товары и услуг</a></li>
-                    <li class="link">
-                      <a href="#">Образование и карьера</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="mainBlock">
-          <header>
-            <div class="networkIcons">
-              <a href="#"
-                ><i class="fa fa-facebook  fa-lg" aria-hidden="true"></i
-              ></a>
-              <a href="#">
-                <i class="fa fa-vk  fa-lg" aria-hidden="true"></i
-              ></a>
-              <a href="#"
-                ><i class="fa fa-odnoklassniki   fa-lg" aria-hidden="true"></i
-              ></a>
-            </div>
-          </header>
-          <main>
-            <div class="et">
-              <p>EPOCH TIMES</p>
-            </div>
-            <nav class="mainNav">
-              <ul>
-                <li><a href="#">ГЛАВНАЯ</a></li>
-                <li><a href="#">О НАС</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
-                <li><a href="#">РЕКЛАМА</a></li>
-                <li><a href="#">РУБРИКИ</a></li>
-              </ul>
-            </nav>
-
-            <!-- <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img src="images/common.jpg" width="100%" alt="pic" /></div>
-                <div class="swiper-slide"><img src="images/dandelion1.jpg" width="100%" alt="pic" /></div>
-                <div class="swiper-slide"><img src="images/dandelion2.jpg" width="100%" alt="pic" /></div>
-                <div class="swiper-slide"><img src="images/flower.jpg" width="100%" alt="pic" /></div>
-
-              </div>
-
-              <div class="swiper-pagination"></div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div> -->
-
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/common.jpg" width="100%" alt="pic" />
-                  <div class="gradCard"></div>
-                  <p class="textCard">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus, eos.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/dandelion1.jpg" width="100%" alt="pic" />
-                  <div class="gradCard"></div>
-                  <p class="textCard">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus, eos.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/dandelion2.jpg" width="100%" alt="pic" />
-                  <div class="gradCard"></div>
-                  <p class="textCard">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus, eos.
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/flower.jpg" width="100%" alt="pic" />
-                  <div class="gradCard"></div>
-                  <p class="textCard">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus, eos.
-                  </p>
-                </div>
-              </div>
-
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="block-button-prev"></div>
-              <div class="block-button-next"></div>
-
-              <div class="swiper-scrollbar"></div>
-            </div>
-          </main>
-        </div>
+        </main>
       </div>
+    </div>
 
-      <script src="js/index.js"></script>
-      <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.min.js"></script>
 
-      <script>
-        var swiper = new Swiper(".swiper-container", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-          }
-        });
-      </script>
-    </body>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+
   </html>
 </body>
