@@ -108,7 +108,6 @@
 }
 #idishka:checked ~ .menuBlock {
   left: 0;
-
 }
 .inline {
   display: inline-block;
@@ -118,10 +117,10 @@
   background-position: center;
   background-size: cover;
   cursor: pointer;
-  position: absolute;
-  z-index: 99;
   top: 19px;
   left: 25px;
+  z-index: 99;
+  position: fixed;
 }
 
 #idishka:checked ~ .inline {
@@ -130,6 +129,8 @@
   background-position: center center;
   background-size: 20px;
   height: 20px;
+  position: absolute;
+
 }
 
 #idishka,
@@ -225,8 +226,12 @@ header {
   text-align: center;
   display: flex;
   justify-content: flex-end;
-  position: relative;
+  position: sticky;
+  will-change: transform;
+  top: 0;
+  z-index: 90;
 }
+
 .mainBlock {
   width: 100%;
 }
@@ -275,12 +280,14 @@ header {
   transition: 2s;
   left: 20%;
   top: 17px;
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 
 #idishka:checked ~ .name {
   opacity: 1;
 }
+#idishka:checked ~ .mainBlock header {
+position: relative;}
 .mainList {
   width: 90%;
   margin: 0 auto;
@@ -304,8 +311,7 @@ header {
   margin: auto;
   font-size: 35px;
   font-stretch: ultra-condensed;
-  font-family: 'Times New Roman', Times, serif
-
+  font-family: "Times New Roman", Times, serif;
 }
 .et p {
   padding: 30px 5px 0;
@@ -364,7 +370,7 @@ header {
 .menuNav a {
   color: white;
 }
-.mainNav a{
+.mainNav a {
   color: black;
 }
 .mainNav {
@@ -373,7 +379,6 @@ header {
   font-weight: 500;
   margin-bottom: 25px;
 }
-
 
 .swiper-container {
   width: 100%;
