@@ -6,8 +6,51 @@
   max-width: 500px;
   height: 300px;
   margin-bottom: 0 auto 20px;
+  overflow: hidden;
+  margin: auto
 }
-
+.last-news-slider .swiper-container {
+  height: 200px;
+}
+.swiper2 {
+  padding-top: 25px;
+}
+.swiper2 .textCard a {
+  color: #212524;
+  font-size: 14px;
+  text-transform: initial;
+}
+.last-news-text  h4 a {
+font-weight: 800;
+}
+.last-news-text  h4  {
+margin-bottom: 15px;
+}
+ .swiper2 .textCard {
+  text-align: left;
+  position: unset;
+  margin: 0;
+  width: 100%;
+}
+.last-news-text{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: initial;
+  text-align: left;
+  width: 42%;
+  padding: 0 10px;
+}
+.last-news-tag{
+  background-color: #E85E32;
+  padding: 5px 20px ;
+  display: inline-block;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.last-news-info{
+  text-align: right;
+}
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }
@@ -23,6 +66,10 @@
   height: auto;
   width: 100%;
 }
+.swiper2 .slideImg {
+  width: 58%;
+}
+
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -242,6 +289,13 @@
 .swiper-button-prev img {
   transform: rotate(180deg);
 }
+.last-news-slider .swiper-button-next img {
+  transform: rotate(180deg);
+}
+.last-news-slider .swiper-button-prev img {
+  transform: rotate(0deg);
+}
+
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   right: 13px;
@@ -317,12 +371,24 @@
 }
 
 .swiper2 .swiper-pagination-bullets{
-position: relative; 
 margin-top: 35px;
+}
+.last-news-slider .swiper-pagination{
+  left: 0;
+  right: 0;
+  top: 35px;
+  margin-bottom: 80px;
+}
+.last-news-slider .swiper-pagination-bullet{
+  margin: 0 4px 0;
+}
+
+.last-news-slider .swiper-button-prev , .last-news-slider .swiper-button-next {
+top: 26;
 }
 
 
-
+ 
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
   font-size: 0;
@@ -520,7 +586,6 @@ button.swiper-pagination-bullet {
   border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
-  background: rgba(0, 0, 0, 0.1);
 }
 .swiper-container-horizontal > .swiper-scrollbar {
   position: absolute;
