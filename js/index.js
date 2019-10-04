@@ -49,7 +49,7 @@ function positionHandler(e) {
 }
 
 const moovTrigger = function () {
-  if (posXStart > posXEnd) {
+  if ((posXStart - posXEnd)>20) {
     let event = document.createEvent('MouseEvents');
     event.initMouseEvent( 'click' );
     checkbox.dispatchEvent(event);
