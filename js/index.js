@@ -6,10 +6,8 @@ const swiper_button_next1 = document.querySelector(".swiper-button-next1")
 const swiper_button_prev1 = document.querySelector(".swiper-button-prev1")
 const swiper_button_next2 = document.querySelector(".swiper-button-next2")
 const swiper_button_prev2 = document.querySelector(".swiper-button-prev2")
-console.log(swiper_1, swiper_2, swiper_pagination1, swiper_pagination2, swiper_button_next1, swiper_button_prev1)
 
-
-var swiper1 = new Swiper(swiper_1, {
+const swiper1 = new Swiper(swiper_1, {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -22,7 +20,7 @@ var swiper1 = new Swiper(swiper_1, {
     prevEl: swiper_button_prev1,
   },
 });
-var swiper2 = new Swiper(swiper_2, {
+const swiper2 = new Swiper(swiper_2, {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -35,4 +33,31 @@ var swiper2 = new Swiper(swiper_2, {
     prevEl: swiper_button_prev2,
   },
 });
+// close menu with swipe
+const menuBlock = document.querySelector(".menuBlock");
+const checkbox = document.querySelector("#idishka");
 
+let posXStart, posXEnd;
+
+function positionHandler(e) {
+  if (e.type === "touchstart") {
+    posXStart = e.changedTouches[0].clientX;
+  }
+  if (e.type === "touchend") {
+    posXEnd = e.changedTouches[0].clientX;
+  }
+}
+
+const moovTrigger = function () {
+  if (posXStart > posXEnd) {
+    let event = document.createEvent('MouseEvents');
+    event.initMouseEvent( 'click' );
+    checkbox.dispatchEvent(event);
+  }
+}
+
+menuBlock.addEventListener('touchstart', positionHandler, false);
+menuBlock.addEventListener('touchend', (e) => {
+  positionHandler(e);
+  moovTrigger()
+}, false);

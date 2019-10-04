@@ -26,6 +26,8 @@
   transition: 1s;
   top: 56px;
   z-index: 90;
+  height: 100vh;
+  overflow-y:auto;
 }
 
 .menuBlock ul {
@@ -108,6 +110,11 @@
 }
 #idishka:checked ~ .menuBlock {
   left: 0;
+  overflow: auto;
+  visibility: visible;
+  background-attachment: scroll;
+  background-clip: border-box;
+
 }
 .inline {
   display: inline-block;
@@ -129,7 +136,7 @@
   background-position: center center;
   background-size: 20px;
   height: 20px;
-  position: absolute;
+  position: fixed;
 
 }
 
@@ -274,7 +281,7 @@ header {
 
 .name {
   font-size: 25px;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   color: #ffffff;
   opacity: 0;
@@ -400,7 +407,7 @@ margin: auto;
 }
 .last-news-title-after{
   background-color: #E85E32;
-  width: 9px;
+  width: 10px;
   margin-right: 7px;
   height: 19px;
   margin-top:9px;
