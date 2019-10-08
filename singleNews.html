@@ -1,0 +1,597 @@
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/singleNews.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="flex">
+      <input type="checkbox" id="idishka" />
+      <label for="idishka" class="inline"> </label>
+      <p class="name">EPOCH TIMES</p>
+      <div class="menuBlock">
+        <nav class="menuNav">
+          <ul>
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">РЕКЛАМА</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Поиск..." />
+            <button type="submit">
+              <i class="fa fa-search  fa-lg" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="mainList">
+          <li>
+            <div class="categorie link">
+              <a href="#">ВДОХНОВЕНИЕ</a>
+            </div>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="china" />
+
+            <div class="categoryName">
+              <a href="#"> КИТАЙ</a>
+            </div>
+            <div class="labelBox">
+              <label for="china" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+            <ul class="subList secList">
+              <li><a href="#"> Политика Китая</a></li>
+              <li><a href="#">Экономика Китая</a></li>
+              <li><a href="#">Природные и техногенные катастрофы</a></li>
+              <li><a href="#">Общество Китая</a></li>
+              <li><a href="#">Гонконг</a></li>
+              <li><a href="#">Права человека</a></li>
+              <li><a href="#">Извлечение органов</a></li>
+              <li><a href="#">Традиционная культура</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="categorie link">
+              <a href="#">ЖИЗНЬ</a>
+            </div>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="culture" />
+
+            <div class="categoryName">
+              <a href="#"> КУЛЬТУРА И ИСКУССТВО</a>
+            </div>
+            <div class="labelBox">
+              <label for="culture" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости культуры</a></li>
+              <li><a href="#">Знаменитости</a></li>
+              <li><a href="#">Искусство</a></li>
+              <li><a href="#">Кино и музыка</a></li>
+              <li><a href="#"> Shen Yun – спецтема</a></li>
+              <li><a href="#">Литература</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="science" />
+            <div class="categoryName">
+              <a href="#"> НАУКА И ТЕХНОЛОГИИ</a>
+            </div>
+            <div class="labelBox">
+              <label for="science" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости науки</a></li>
+              <li><a href="#">Окружающая среда</a></li>
+              <li><a href="#">За гранью науки</a></li>
+              <li><a href="#">Космос</a></li>
+              <li><a href="#">Технологии и открытия</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="aroundWorld" />
+
+            <div class="categoryName">
+              <a href="#"> ВОКРУГ СВЕТА</a>
+            </div>
+            <div class="labelBox">
+              <label for="aroundWorld" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList secList">
+              <li><a href="#">Новости туризма</a></li>
+              <li><a href="#">Туризм и отдых</a></li>
+              <li><a href="#">Достопримечательности</a></li>
+              <li><a href="#">Советы туристам</a></li>
+            </ul>
+          </li>
+
+          <li class="relLi">
+            <input type="checkbox" id="archive" />
+
+            <div class="categoryName">
+              <a href="#"> АРХИВ</a>
+            </div>
+            <div class="labelBox">
+              <label for="archive" class="categorieLabel"></label>
+            </div>
+            <div class="imgLabel">
+              <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+            </div>
+
+            <ul class="subList archiveList">
+              <li class="relLi">
+                <input type="checkbox" id="world" />
+
+                <div class="categoryName">
+                  <a href="#"> МИР</a>
+                </div>
+                <div class="labelBox">
+                  <label for="world" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel  thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#"> Европа</a></li>
+                  <li><a href="#"> Украина</a></li>
+                  <li><a href="#"> Ближний восток</a></li>
+                  <li><a href="#"> Азия</a></li>
+                  <li><a href="#"> Африка</a></li>
+                  <li><a href="#"> Северная Америка</a></li>
+                  <li><a href="#"> Южная Америка</a></li>
+                  <li><a href="#"> Австралия и Океания</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="russia" />
+                <div class="categoryName">
+                  <a href="#"> РОССИЯ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="russia" class="categorieLabel "></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+
+                <ul class="subList">
+                  <li><a href="#"> Политика России</a></li>
+                  <li><a href="#"> Экономика России</a></li>
+                  <li><a href="#"> Происшествия в России</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="moscow" />
+
+                <div class="categoryName">
+                  <a href="#"> МОСКВА</a>
+                </div>
+                <div class="labelBox">
+                  <label for="moscow" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+
+                <ul class="subList">
+                  <li>Отдых в Москве</li>
+                  <li>Происшествия в Москве</li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="opinion" />
+
+                <div class="categoryName">
+                  <a href="#"> МНЕНИЕ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="opinion" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Интервью</a></li>
+                  <li><a href="#">Точка зрения</a></li>
+                  <li><a href="#">Взгляд на Китай</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="fashion" />
+                <div class="categoryName">
+                  <a href="#"> МОДА</a>
+                </div>
+                <div class="labelBox">
+                  <label for="fashion" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Новости моды</a></li>
+                  <li><a href="#">Тренды</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="sport" />
+
+                <div class="categoryName">
+                  <a href="#"> СПОРТ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="sport" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Новости спорта</a></li>
+                  <li><a href="#">Новости футбола</a></li>
+                  <li><a href="#">Новости хоккея</a></li>
+                  <li><a href="#">Фигурное катание</a></li>
+                  <li><a href="#">Автоспорт</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="categorie link">
+                  <a href="#"> ИСТОРИЯ КОММУНИЗМА</a>
+                </div>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="video" />
+                <div class="categoryName">
+                  <a href="#"> ВИДЕО</a>
+                </div>
+                <div class="labelBox">
+                  <label for="video" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">О разном</a></li>
+                  <li><a href="#">Забавные животные</a></li>
+                  <li><a href="#">Развлечения</a></li>
+                  <li><a href="#">Фотогалерея</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="health" />
+                <div class="categoryName">
+                  <a href="#"> ЗДОРОВЬЕ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="health" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#"> Образ жизни</a></li>
+                  <li><a href="#"> Правильное питание</a></li>
+                  <li><a href="#"> Фитнесс</a></li>
+                  <li><a href="#"> Новости медицины</a></li>
+                  <li><a href="#"> Китайская медицина</a></li>
+                </ul>
+              </li>
+              <li class="relLi">
+                <input type="checkbox" id="aboutAll" />
+                <div class="categoryName">
+                  <a href="#"> ОБО ВСЁМ ПОНЕМНОГУ</a>
+                </div>
+                <div class="labelBox">
+                  <label for="aboutAll" class="categorieLabel"></label>
+                </div>
+                <div class="imgLabel thirdLabel">
+                  <img src="./images/drop-down-arrow.svg" width="10px" alt="arrow" />
+                </div>
+                <ul class="subList">
+                  <li><a href="#">Семья</a></li>
+                  <li><a href="#">Дом</a></li>
+                  <li><a href="#">Кулинария</a></li>
+                  <li><a href="#">Авто</a></li>
+                  <li><a href="#">Интересные факты</a></li>
+                  <li><a href="#">Товары и услуг</a></li>
+                  <li class="link">
+                    <a href="#">Образование и карьера</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="mainBlock">
+        <header>
+          <div class="networkIcons">
+            <a href="#"><i class="fa fa-facebook  fa-lg" aria-hidden="true"></i></a>
+            <a href="#">
+              <i class="fa fa-vk  fa-lg" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-odnoklassniki   fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </header>
+        <main>
+          <div class="et">
+            <p>EPOCH TIMES</p>
+          </div>
+          <section>
+            <nav class="mainNav">
+              <ul>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">РЕКЛАМА</a></li>
+                <li><a href="#">РУБРИКИ</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <section class="singeNews-first-block">
+            <div class="flex singeNews-title-block">
+              <div class="singeNews-title-after"></div>
+              <h4 class="singeNews-title">Китай</h4>
+              <div class="singeNews-title-before"></div>
+            </div>
+            <div class="singeNews-main-image">
+              <img src="./images/water-lily-3784022_640.jpg" alt="picture" />
+            </div>
+            <div class="flex singeNews-photh-descr">
+              <p>17.08.2019</p>
+              <p>Фото: flickr.com/photos/sikk/48857840487</p>
+            </div>
+            <h5>
+              Quos laudantium iste architecto ab, sit porro autem consequuntur
+              perspiciatis nulla nobis reprehenderit commodi impedit est amet?
+              Ut cum sequi expedita aliquid!
+            </h5>
+            <div class="singeNews-author flex">
+              <div>
+                <p>Автор:</p>
+                <p class="singeNews-author-name">Великая Эпоха</p>
+              </div>
+              <div><img src="./images/login-icon-9.jpg" alt="photo" /></div>
+            </div>
+          </section>
+
+          <section class="singeNews-content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Impedit aliquid sequi dolorum enim, minima quod facere molestiae
+              reprehenderit sint consectetur similique pariatur fuga porro.
+              Similique saepe commodi laboriosam dicta unde!
+            </p>
+            <iframe src="https://www.youtube.com/embed/knxsBYlTSFE"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Impedit aliquid sequi dolorum enim, minima quod facere molestiae
+              reprehenderit sint consectetur similique pariatur fuga porro.
+              Similique saepe commodi laboriosam dicta unde!
+            </p>
+            <img class="singeNews-content-image" src="./images/mosaic-200864_640.jpg" alt="photo" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Impedit aliquid sequi dolorum enim, minima quod facere molestiae
+              reprehenderit sint consectetur similique pariatur fuga porro.
+              Similique saepe commodi laboriosam dicta unde!
+            </p>
+            <div class="singleNews-quote">
+              <img class="right-quotes" src="./images/right-quotes-symbol.svg" alt="quote" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae nostrum repellendus facere alias, corporis minima ab
+                tempore veniam sed. Consectetur atque cumque voluptates vel a
+                eos ipsam est corrupti in?
+              </p>
+              <img class="left-quotes" src="./images/left-quotes-sign.svg" alt="quote" />
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Impedit aliquid sequi dolorum enim, minima quod facere molestiae
+              reprehenderit sint consectetur similique pariatur fuga porro.
+              Similique saepe commodi laboriosam dicta unde!
+            </p>
+            <div class="singleNews-article-end"></div>
+          </section>
+
+          <section class="singleNews-sharing-section">
+            <div class="singleNews-sharing-block flex">
+              <div class="singleNews-networks">
+                <div>
+                  <a href="#" class="vk-link">
+                    <i class="fa fa-vk  fa-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="facebook-link">
+                    <i class="fa fa-facebook  fa-lg" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                  <a href="#" class="odnoklassniki-link"><i class="fa fa-odnoklassniki   fa-lg"
+                      aria-hidden="true"></i></a>
+                </div>
+                <div>
+                  <a href="#" class="mail-link">
+                    <i class="fa fa-at  fa-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p>ПОНРАВИЛАСЬ СТАТЬЯ -</p>
+                <p>ПОДЕЛИТЕСЬ С ДРУЗЬЯМИ!</p>
+              </div>
+            </div>
+          </section>
+          <section class="singleNews-comments-section">
+            <div class="singleNews-comments flex">
+
+              <p class="singleNews-likes-quant">Комментарии: 6</p>
+              <div class="flex singleNews-likes">
+                <div class="flex">
+                  <p>246</p>
+                  <div class="singleNews-like">
+                    <img src="./images/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="flex">
+                  <p>0</p>
+                  <div class="singleNews-dislike">
+                    <img src="./images/like.svg" class="" alt="dislike" />
+                  </div>
+                </div>
+              </div>
+              <div class="singleNews-sharing-arrow">
+                <img src="./images/double-angle-pointing-to-right(1).svg" alt="arrow">
+              </div>
+            </div>
+          </section>
+
+          <section class="singleNews-advertisement">
+            <img src="./images/water-lily-3784022_640.jpg" alt="advertisment">
+            <p>РЕКЛАМА</p>
+          </section>
+
+          <section class="singleNews-slider"></section>
+
+          <section class="singleNews-choice">
+            <div class="singleNews-choice-title">
+              <h2>ВЫБОР НАШЕГО РЕДАКТОРА</h2>
+              <div class="fragment"></div>
+            </div>
+            <div class="flex singleNews-choice-content">
+              <div class="singleNews-choice-card">
+                <div><img src="./images/mosaic-200864_640.jpg" alt="news-image"></div>
+                <div class="text">
+                  <div class="flex">
+                    <h4>КИТАЙ</h4>
+                    <p>17.08.2019</p>
+                  </div>
+                  <h5>Earum, error! Maiores voluptatibus odit officia dolore quae quasi? Velit reprehenderit et est.
+                  </h5>
+                </div>
+              </div>
+              <div class="singleNews-choice-card">
+                <div><img src="./images/mosaic-200864_640.jpg" alt="news-image"></div>
+                <div class="text">
+                  <div class="flex">
+                    <h4>КИТАЙ</h4>
+                    <p>17.08.2019</p>
+                  </div>
+                  <h5>Earum, error! Maiores voluptatibus odit officia dolore quae quasi? Velit reprehenderit et est.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="singleNews-reccomend">
+            <div class="flex singeNews-title-block">
+              <div class="singeNews-title-after"></div>
+              <h4 class="singeNews-title">Рекомендуем</h4>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+          </section>
+
+          <section class="singleNews-advertisement">
+              <img src="./images/water-lily-3784022_640.jpg" alt="advertisment">
+              <p>РЕКЛАМА</p>
+            </section>
+
+<section class="singleNews-reccomend">
+            
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+            <div class="singleNews-reccomend-card">
+              <img src="./images/mosaic-200864_640.jpg" alt="image">
+              <p class="date">17.08.2019</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque officia laborum, accusamus libero voluptas.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste ab animi distinctio voluptas debitis vel corporis sit accusamus explicabo?</p>
+            </div>
+          </section>
+                    <section class="singleNews-advertisement">
+            <img src="./images/water-lily-3784022_640.jpg" alt="advertisment">
+            <p>РЕКЛАМА</p>
+          </section>
+          <footer></footer>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+
+  </html>
+</body>
