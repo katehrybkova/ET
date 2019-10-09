@@ -360,7 +360,12 @@ header {
   font-size: 15px;
 }
 .mainNav ul li {
-  padding: 5px 12px;
+  padding: 5px 5px;
+}
+@media(min-width:370px){
+  .mainNav ul li {
+    transform: scaleX(0.97);
+  }
 }
 .menuNav a:hover,
 .mainNav a:hover {
@@ -382,7 +387,7 @@ header {
 }
 .mainNav {
   border-bottom: 3px solid black;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 25px;
 }
@@ -394,7 +399,7 @@ header {
 
 .last-news-title-block, .singeNews-title-block {
   padding: 18px 0 0 10px;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 .last-news-title, .singeNews-title {
