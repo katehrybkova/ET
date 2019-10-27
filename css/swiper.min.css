@@ -12,10 +12,10 @@
 .last-news-slider .swiper-container {
   height: 250px;
 }
-.swiper2 {
+.swiper2, .swiper3 {
   padding-top: 25px;
 }
-.swiper2 .textCard a {
+.swiper2 .textCard a, .swiper3 .textCard a  {
   color: #212524;
   font-size: 14px;
   text-transform: initial;
@@ -27,10 +27,10 @@ font-weight: 800;
 .last-news-text  h4 {
 font-size: 16px;
 }
-.swiper2 .last-news-text  h4  {
+.swiper2 .last-news-text  h4, .swiper3 .last-news-text  h4  {
 margin-bottom: 10px;
 }
- .swiper2 .textCard {
+ .swiper2 .textCard, .swiper3 .textCard {
   text-align: left;
   position: unset;
   margin: 0;
@@ -39,8 +39,8 @@ margin-bottom: 10px;
 .last-news-text{
   position: absolute;
   top: 0;
-  right: 0;
-  left: initial;
+  left: 0;
+  right: initial;
   text-align: left;
   width: 42%;
   padding: 0 10px;
@@ -72,9 +72,6 @@ margin-bottom: 10px;
 .slideImg {
   height: auto;
   width: 100%;
-}
-.swiper2 .slideImg {
-  width: 58%;
 }
 
 .swiper-wrapper {
@@ -831,4 +828,41 @@ button.swiper-pagination-bullet {
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
+}
+.slide-img{
+  position: absolute;
+  right: 0;
+  width: 58%;
+}
+/* .slide-img img{
+  width: 100%;
+} */
+.categories-slider .swiper-button-next, .categories-slider .swiper-button-prev{
+top: 115px;
+}
+.categories-slider .swiper-button-prev{
+  left: 43%;
+}
+.categories-slider .swiper-button-next{
+  right: 5px;
+}
+.categories-slider .block-button-prev, .categories-slider .block-button-next{
+top: 128px;
+}
+.categories-slider .block-button-prev{
+  left: 42%;
+}
+.categories-slider .block-button-next{
+  right: 0;
+}
+
+.categories-slider .swiper-button-next img {
+  transform: rotate(0deg);
+}
+.categories-slider .swiper-button-prev img {
+  transform: rotate(180deg);
+} 
+
+.categories-slider .block-button-prev, .categories-slider .block-button-next {
+  background-color: rgba(255, 255, 255, 0.705);
 }

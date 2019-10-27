@@ -421,3 +421,19 @@ header {
   height: 28px;
   margin: right;
 }
+.categories-after{
+  background-color: #e85e32;
+  width: 6px;
+  margin-right: 7px;
+  height: 15px;
+  margin-top: 9px;
+}
+.categories-title-block .categories-title  {
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 20px;
+}
+.swiper3 .textCard a{
+
+}
